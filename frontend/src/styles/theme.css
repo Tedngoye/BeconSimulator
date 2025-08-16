@@ -1,0 +1,31 @@
+
+/* thème minimal pour éviter un import cassé */
+/*body{ font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }*/
+
+:root{
+    --noir:#000000; --gris:#666666; --gris-200:#e6e6e6; --gris-50:#fafafa;
+    --ink:#111111; --radius:16px; --shadow:0 6px 24px rgba(0,0,0,.06);
+    --font: "ITC Avant Garde Gothic","Avant Garde","URW Gothic L","Century Gothic",Futura,Arial,sans-serif;
+    --font-demi: "ITC Avant Garde Gothic Demi","Avant Garde Demi","URW Gothic L","Century Gothic",Futura,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{font-family:var(--font);color:var(--ink);} 
+  .container{max-width:1200px;margin:0 auto;padding:16px}
+  .card{background:#fff;border:1px solid var(--gris-200);border-radius:var(--radius);box-shadow:var(--shadow)}
+  .pad{padding:18px}
+  .title{font-family:var(--font-demi);font-size:22px;margin:0 0 10px}
+  .muted{color:var(--gris)}
+  .btn{appearance:none;border:1px solid var(--noir);background:var(--noir);color:#fff;border-radius:12px;padding:10px 14px;cursor:pointer}
+  .btn.ghost{background:#fff;color:var(--noir)}
+  .input,.select{width:100%;border:1px solid var(--gris-200);border-radius:12px;padding:12px 56px 12px 12px;font-size:16px;background:#fff;color:var(--ink)}
+  .field{position:relative}
+  .currency{position:absolute;right:6px;top:6px;bottom:6px;min-width:64px;display:flex;align-items:center;gap:6px;justify-content:center;border:1px solid var(--gris-200);border-radius:10px;color:var(--ink);background:#fafafa;font-size:14px;padding:0 8px}
+  .grid-2{display:grid;grid-template-columns:420px 1fr;gap:16px;align-items:start}
+  @media (max-width:960px){.grid-2{grid-template-columns:1fr}}
+  .segments{background:#fff;border:1px solid var(--gris-200);border-radius:999px;padding:4px;display:inline-flex;gap:4px;box-shadow:var(--shadow)}
+  .seg{appearance:none;border:0;background:transparent;padding:10px 16px;border-radius:999px;cursor:pointer;color:var(--gris);font-family:var(--font-demi);display:flex;align-items:center;gap:8px}
+  .seg.active{background:var(--noir);color:#fff}
+  .line{display:flex;justify-content:space-between;padding:6px 0}
+  .line.bordered{border-top:1px dashed var(--gris-200);margin-top:6px;padding-top:10px}
+  .value-strong{font-family:var(--font-demi);font-size:20px}
+  .flag-sm{width:18px;height:12px;object-fit:cover;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.06)}
